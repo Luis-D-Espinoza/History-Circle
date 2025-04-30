@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LuisProfile.css">
+    <title>About You</title>
+</head>
+<body>
+    <!-- Menu Toggle -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <label for="menu-toggle" class="menu-toggle">☰</label>
+            <div class="logo">Logo</div>
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-button">Home</button>
+            <button class="nav-button">Info</button>
+            <button class="nav-button">Contact</button>
+            <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button class="sidebar-button">Dashboard</button>
+        <button class="sidebar-button">Profile</button>
+        <button class="sidebar-button">Settings</button>
+    </div>
+
+    <!-- Main Content - About You Section -->
+    <main>
+        <div class="about-container">
+            <!-- Combined Section with Info and Profile Picture -->
+            <div class="combined-section">
+                <!-- Info Content -->
+                <div class="info-content">
+                    <h1 class="name-placeholder">Luis Espinoza</h1>
+                    
+                    <div class="about-you">
+                        <h2 class="section-title">About you (probably get rid of this part)</h2>
+                        <div class="section-content">
+                            <p>About selected Author here.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="research-interests">
+                        <h2 class="section-title">Research interests</h2>
+                        <div class="section-content">
+                            <p>Insert Research Interest 1.</p>
+                            <p>Insert Research Interest 2.</p>
+                            <p>Insert Research Interest 3.</p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h2 class="education-title">Education</h2>
+                        <div class="section-content">
+                            <p> B.A., San Francisco State University, 2020</p>
+                        </div>
+                    </div>
+                    <div class="publications">
+                        <h2 class="section-title">Publications</h2>
+                        <div class="section-content">
+                            <p>Insert Website Publications Here.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Profile Picture Content -->
+                <div class="profile-content">
+                    <div class="profile-picture">
+                        Profile Picture Placeholder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <button class="footer-button">Company</button>
+                <button class="footer-button">Team</button>
+                <button class="footer-button">Careers</button>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <button class="footer-button">Blog</button>
+                <button class="footer-button">Documentation</button>
+                <button class="footer-button">Help Center</button>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <button class="footer-button">Privacy</button>
+                <button class="footer-button">Terms</button>
+                <button class="footer-button">Cookie Policy</button>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <button class="footer-button">Twitter</button>
+                <button class="footer-button">LinkedIn</button>
+                <button class="footer-button">Facebook</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>
