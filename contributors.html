@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <div class="logo">Logo</div>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="contributors.html" class="nav-button">Contributors</a>
+            <button class="nav-button">Contact</button>
+            <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="contributor-container">
+            <h1 class="section-heading">Our Contributors</h1>
+            
+            <div class="contributor-cards-grid">
+                <!-- Contributor 1 -->
+                <a href="authorprofile1.html" class="contributor-card-link">
+                    <div class="contributor-card">
+                        <div class="top">
+                            <div class="profile-img"></div>
+                            <h3 class="title">Luis Espinoza</h3>
+                            <p class="role">History Student</p>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                
+                <!-- Contributor 2 -->
+                <a href="#" class="contributor-card-link">
+                    <div class="contributor-card">
+                        <div class="top">
+                            <div class="profile-img"></div>
+                            <h3 class="title">John Smith</h3>
+                            <p class="role">Graduate Student</p>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                
+                <!-- Contributor 3 -->
+                <a href="#" class="contributor-card-link">
+                    <div class="contributor-card">
+                        <div class="top">
+                            <div class="profile-img"></div>
+                            <h3 class="title">Jane Smith</h3>
+                            <p class="role">Curational Assistant</p>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                
+                <!-- Contributor 4 -->
+                <a href="#" class="contributor-card-link">
+                    <div class="contributor-card">
+                        <div class="top">
+                            <div class="profile-img"></div>
+                            <h3 class="title">Your Name Here</h3>
+                            <p class="role">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <button class="footer-button">Company</button>
+                <button class="footer-button">Team</button>
+                <button class="footer-button">Careers</button>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <button class="footer-button">Blog</button>
+                <button class="footer-button">Documentation</button>
+                <button class="footer-button">Help Center</button>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <button class="footer-button">Privacy</button>
+                <button class="footer-button">Terms</button>
+                <button class="footer-button">Cookie Policy</button>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <button class="footer-button">Twitter</button>
+                <button class="footer-button">LinkedIn</button>
+                <button class="footer-button">Facebook</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>
